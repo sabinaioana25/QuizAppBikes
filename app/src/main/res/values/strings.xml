@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">What bike should you choose?</string>
+    <string name="app_description">Are your wheels an accurate window to who you really are? Shed some light on how different types of bikes may reflect your personality.</string>
+
+    <string name="name">Let\'s start!</string>
+    <string name="q1">1. When you are stuck in traffic, you</string>
+    <string name="q2">2. When facing a big project, your first step is to </string>
+    <string name="q3">3. Do you act very differently at work or school than when you are at home?</string>
+    <string name="q4">4. What is your favourite way to relax?</string>
+    <string name="q5">5. When it comes to dining out, how do you usually choose a restaurant?</string>
+    <string name="q6">6. Which two adjectives best describe your personality at work?</string>
+    <string name="q7">7. Which best describes your bedroom right now?</string>
+    <string name="q8">8. When buying a birthday gift for a friend you pick  </string>
+    <string name="q9">9. Your perfect vacation right now involves </string>
+    <string name="q10">10. Select all the items that best describe your behaviour:</string>
+
+    <string name="q1a1">Honk. I\'m late!</string>
+    <string name="q1a2">Never honk</string>
+    <string name="q1a3">Take a shortcut</string>
+
+    <string name="q2a1">Research</string>
+    <string name="q2a2">Ask for help</string>
+    <string name="q2a3">Brainstorm</string>
+
+    <string name="q3a1">Yes I\'m completely different </string>
+    <string name="q3a2">Maybe a little bit at first, but then I warm up </string>
+    <string name="q3a3">No, I\'m always myself no matter where I am</string>
+
+    <string name="q4a1">I only relax when I\'m asleep</string>
+    <string name="q4a2">Read a good book or surf the net</string>
+    <string name="q4a3">Learn or create something new</string>
+
+    <string name="q5a1">Can someone else choose?</string>
+    <string name="q5a2">I go by recommendation from friends</string>
+    <string name="q5a3">Let\'s mix it up! I want to go to places I\'ve never tried before</string>
+
+    <string name="q6a1">Quiet and productive</string>
+    <string name="q6a2">Social and talkative</string>
+    <string name="q6a3">Energetic and efficient</string>
+
+    <string name="q7a1">Neat and tidy</string>
+    <string name="q7a2">A bit of a mess</string>
+    <string name="q7a3">Colourful and decorative</string>
+
+    <string name="q8a1">A gift card so they can choose</string>
+    <string name="q8a2">Something expensive and of high quality</string>
+    <string name="q8a3">Something handmade</string>
+
+    <string name="q9a1">Beach, sunshine and cocktails, baby!</string>
+    <string name="q9a2">Getting somewhere secluded and close to nature</string>
+    <string name="q9a3">An adventure! Heading to a big city and meeting new people</string>
+
+    <string name="q10a1">Quiet</string>
+    <string name="q10a2">Relaxed</string>
+    <string name="q10a3">Anxious</string>
+    <string name="q10a4">Argumentative</string>
+    <string name="q10a5">Outgoing</string>
+
+    <string name="btn_start">Start</string>
+    <string name="btn_result">Submit</string>
+    <string name="restart_quiz">Take the quiz again</string>
+
+    <string name="result_header">Awesome! Here is your result:</string>
+
+    <string name="summary1">A CRUISER, you are rater laid-back. You embrace carefree days and thoroughly enjoy the sweet, simple things in life.</string>
+    <string name="summary2">HYBRID BIKE. You are the person who is ready for anything and everything that your ride route (and life) may throw your way.</string>
+    <string name="summary3">ROAD BIKE. Energetic and dedicated, you are both loyal leader and team player. You value endurance and doing what it takes to get a job done-and done right.</string>
+    <string name="summary4">BMX BIKE. You are an adrenaline-junkie. You love the spotlight and will often do whatever it takes to maintain your audience, even if it involves some risk. The bigger the thrills and spills, the better!</string>
+    <string name="summary5">TREADLE BIKE. You are clearly a trend-setter. You are eccentric and love finding hobbies that set you apart from the crowd.</string>
+
+
+</resources>
