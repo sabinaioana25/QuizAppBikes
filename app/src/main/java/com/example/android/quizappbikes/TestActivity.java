@@ -1,9 +1,9 @@
 package com.example.android.quizappbikes;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
@@ -12,8 +12,7 @@ import android.widget.RadioButton;
  * Created by Sabina on 4/10/2017.
  */
 
-
-public class Test extends Activity {
+public class TestActivity extends AppCompatActivity {
 
     RadioButton q1A1, q1A2, q1A3, q2A1, q2A2, q2A3, q3A1, q3A2, q3A3, q4A1, q4A2, q4A3, q5A1, q5A2, q5A3, q6A1, q6A2, q6A3,
             q7A1, q7A2, q7A3, q8A1, q8A2, q8A3, q9A1, q9A2, q9A3;
@@ -25,11 +24,9 @@ public class Test extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_test);
+        getSupportActionBar();
 
-
-
-
-        setContentView(R.layout.activity_questions);
         q1A1 = (RadioButton) findViewById(R.id.q1a1);
         q1A2 = (RadioButton) findViewById(R.id.q1a2);
         q1A3 = (RadioButton) findViewById(R.id.q1a3);
@@ -73,7 +70,7 @@ public class Test extends Activity {
         q10A5 = (CheckBox) findViewById(R.id.q10a5);
     }
 
-    public void submitAnswer(View view) {
+    public void getResult(View view) {
 
         if (q1A1.isChecked()) {
             points += 1;
@@ -183,8 +180,9 @@ public class Test extends Activity {
 
         // display the final answer / conclusion depending on the user's choices
 
-        Intent goToAnswerPage = new Intent(this, MainActivityResult.class);
-        goToAnswerPage.putExtra("Test", points);
-        startActivity(goToAnswerPage);
+        Intent intent = new Intent(this, ResultActivity.class);
+        intent.putExtra("TestActivity", points);
+        startActivity(intent);
+        finish();
     }
 }

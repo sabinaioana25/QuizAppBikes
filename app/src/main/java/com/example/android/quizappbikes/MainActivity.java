@@ -7,7 +7,6 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,8 +14,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startQuiz(View view) {
-        Intent startQuiz = new Intent(this, Test.class);
+        Intent startQuiz = new Intent(this, TestActivity.class);
         startActivity(startQuiz);
-
     }
 }

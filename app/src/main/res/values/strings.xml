@@ -2,7 +2,7 @@
     <string name="app_name">What bike should you choose?</string>
     <string name="app_description">Are your wheels an accurate window to who you really are? Shed some light on how different types of bikes may reflect your personality.</string>
 
-    <string name="name">Let\'s start!</string>
+    <string name="lets_start">Let\'s start!</string>
     <string name="q1">1. When you are stuck in traffic, you</string>
     <string name="q2">2. When facing a big project, your first step is to </string>
     <string name="q3">3. Do you act very differently at work or school than when you are at home?</string>
@@ -67,6 +67,5 @@
     <string name="summary3">ROAD BIKE. Energetic and dedicated, you are both loyal leader and team player. You value endurance and doing what it takes to get a job done-and done right.</string>
     <string name="summary4">BMX BIKE. You are an adrenaline-junkie. You love the spotlight and will often do whatever it takes to maintain your audience, even if it involves some risk. The bigger the thrills and spills, the better!</string>
     <string name="summary5">TREADLE BIKE. You are clearly a trend-setter. You are eccentric and love finding hobbies that set you apart from the crowd.</string>
-
-
+    <string name="hint">Your name</string>
 </resources>
