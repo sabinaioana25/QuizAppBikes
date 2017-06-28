@@ -68,4 +68,6 @@
     <string name="summary4">BMX BIKE. You are an adrenaline-junkie. You love the spotlight and will often do whatever it takes to maintain your audience, even if it involves some risk. The bigger the thrills and spills, the better!</string>
     <string name="summary5">TREADLE BIKE. You are clearly a trend-setter. You are eccentric and love finding hobbies that set you apart from the crowd.</string>
     <string name="hint">Your name</string>
+    <string name="result_header_1">Good work,</string>
+    <string name="result_header_2">Here is your result:</string>
 </resources>

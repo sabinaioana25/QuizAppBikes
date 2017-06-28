@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 
 /**
@@ -14,11 +15,13 @@ import android.widget.RadioButton;
 
 public class TestActivity extends AppCompatActivity {
 
+    // Initialize the RadioButton and Checkbox objects
     RadioButton q1A1, q1A2, q1A3, q2A1, q2A2, q2A3, q3A1, q3A2, q3A3, q4A1, q4A2, q4A3, q5A1, q5A2, q5A3, q6A1, q6A2, q6A3,
             q7A1, q7A2, q7A3, q8A1, q8A2, q8A3, q9A1, q9A2, q9A3;
 
     CheckBox q10A1, q10A2, q10A3, q10A4, q10A5;
 
+    // number of points at the beginning of the quiz
     int points = 0;
 
     @Override
@@ -27,6 +30,7 @@ public class TestActivity extends AppCompatActivity {
         setContentView(R.layout.activity_test);
         getSupportActionBar();
 
+        // find RadioButtons and CheckBox options by their ID
         q1A1 = (RadioButton) findViewById(R.id.q1a1);
         q1A2 = (RadioButton) findViewById(R.id.q1a2);
         q1A3 = (RadioButton) findViewById(R.id.q1a3);
@@ -72,6 +76,9 @@ public class TestActivity extends AppCompatActivity {
 
     public void getResult(View view) {
 
+        // Verify that each RadioButton in each RadioGroup is checked;
+        // On the basis of the user's answer, they get plus one, two or three points added
+        // Verify which checkboxes are ticked to calculate the final score
         if (q1A1.isChecked()) {
             points += 1;
         }
@@ -81,7 +88,6 @@ public class TestActivity extends AppCompatActivity {
         if (q1A3.isChecked()) {
             points += 3;
         }
-
         if (q2A1.isChecked()) {
             points += 1;
         }
@@ -91,7 +97,6 @@ public class TestActivity extends AppCompatActivity {
         if (q2A3.isChecked()) {
             points += 3;
         }
-
         if (q3A1.isChecked()) {
             points += 1;
         }
@@ -101,7 +106,6 @@ public class TestActivity extends AppCompatActivity {
         if (q1A3.isChecked()) {
             points += 3;
         }
-
         if (q4A1.isChecked()) {
             points += 1;
         }
@@ -111,7 +115,6 @@ public class TestActivity extends AppCompatActivity {
         if (q4A3.isChecked()) {
             points += 3;
         }
-
         if (q5A1.isChecked()) {
             points += 1;
         }
@@ -121,7 +124,6 @@ public class TestActivity extends AppCompatActivity {
         if (q5A3.isChecked()) {
             points += 3;
         }
-
         if (q6A1.isChecked()) {
             points += 1;
         }
@@ -131,7 +133,6 @@ public class TestActivity extends AppCompatActivity {
         if (q6A3.isChecked()) {
             points += 3;
         }
-
         if (q7A1.isChecked()) {
             points += 1;
         }
@@ -141,7 +142,6 @@ public class TestActivity extends AppCompatActivity {
         if (q7A3.isChecked()) {
             points += 3;
         }
-
         if (q8A1.isChecked()) {
             points += 1;
         }
@@ -151,7 +151,6 @@ public class TestActivity extends AppCompatActivity {
         if (q8A3.isChecked()) {
             points += 3;
         }
-
         if (q9A1.isChecked()) {
             points += 1;
         }
@@ -161,7 +160,6 @@ public class TestActivity extends AppCompatActivity {
         if (q9A3.isChecked()) {
             points += 3;
         }
-
         if (q10A1.isChecked()) {
             points += 1;
         }
@@ -178,10 +176,18 @@ public class TestActivity extends AppCompatActivity {
             points += 5;
         }
 
-        // display the final answer / conclusion depending on the user's choices
+        // get String from the EditText in which the user writes their name
+        EditText nameOfPerson = (EditText) findViewById(R.id.name_user);
+        final String firstName = nameOfPerson.getText().toString();
 
-        Intent intent = new Intent(this, ResultActivity.class);
+        // pass on the added points and the name of the user to the ResultActivity using an intent.putExtra
+        Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
+
+        // display the final answer / conclusion depending on the user's choices
         intent.putExtra("TestActivity", points);
+
+        // Get the name of the user under the form of a String
+        intent.putExtra("name", firstName);
         startActivity(intent);
         finish();
     }

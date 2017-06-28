@@ -15,11 +15,21 @@ public class ResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
+        // get the intents from TestActivity containing the score and
+        // inputted name of the user
         Intent goToAnswer = getIntent();
-        int score = goToAnswer.getExtras().getInt("TestActivity");
+        Intent getName = getIntent();
 
+        // get the extra information that was put in the intent in the
+        // TestActivity
+        int score = goToAnswer.getExtras().getInt("TestActivity");
+        String name = getName.getExtras().getString("name");
+
+        TextView headerView = (TextView)findViewById(R.id.result_header);
         TextView finalView = (TextView) findViewById(R.id.answer_text_view);
         ImageView finalImage = (ImageView) findViewById(R.id.result_image);
+
+        headerView.setText(getString(R.string.result_header_1) + " " + name + "!\n" + getString(R.string.result_header_2));
 
         if (score < 11) {
             finalView.setText("CRUISER, you are rater laid-back. You embrace carefree days and thoroughly enjoy the sweet, simple things in life.");

@@ -13,7 +13,8 @@
 
         <TextView
             android:id="@+id/result_header"
-            style="@style/result_header_style" />
+            style="@style/result_header_style"
+            tools:text="@string/result_header"/>
 
         <ImageView
             android:id="@+id/result_image"
