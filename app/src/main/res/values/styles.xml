@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -8,26 +8,29 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="image_bike_style">
+    <style name="background_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">@dimen/margin_bottom</item>
         <item name="android:scaleType">centerCrop</item>
-        <item name="android:src">@drawable/bike4</item>
+        <item name="android:elevation" tools:targetApi="lollipop">2dp</item>
+        <item name="android:src">@drawable/bikes_background_cropped</item>
     </style>
 
     <style name="quiz_description_style">
-        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom_quiz_description</item>
         <item name="android:text">@string/app_description</item>
-        <item name="android:layout_marginBottom">@dimen/margin_bottom_2</item>
-        <item name="android:layout_marginTop">@dimen/margin_top</item>
-        <item name="android:layout_marginLeft">@dimen/margin_left</item>
-        <item name="android:layout_marginRight">@dimen/margin_right</item>
+        <item name="android:layout_marginLeft">@dimen/margin_quiz_description</item>
+        <item name="android:layout_marginTop">@dimen/margin_quiz_description</item>
+        <item name="android:layout_marginRight">@dimen/margin_quiz_description</item>
+        <item name="android:elevation" tools:targetApi="lollipop">@dimen/dim_cardview_elevation</item>
         <item name="android:lineSpacingExtra">@dimen/line_spacing</item>
         <item name="android:textAllCaps">false</item>
+        <item name="android:padding">@dimen/padding_quiz_description</item>
         <item name="android:textSize">@dimen/text_size_2</item>
+        <item name="android:background">@drawable/shape</item>
     </style>
 
     <style name="edit_text_description_style">
@@ -35,24 +38,26 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">@dimen/margin_bottom</item>
         <item name="android:layout_marginTop">@dimen/margin_top</item>
-        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left_side</item>
         <item name="android:layout_marginRight">@dimen/margin_right</item>
         <item name="android:inputType">textCapWords</item>
-        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:textSize">@dimen/text_size</item>
         <item name="android:hint">@string/hint</item>
         <item name="android:textStyle">italic</item>
     </style>
 
     <style name="start_button_style">
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">@dimen/cardview_compat_inset_shadow.width_start_button</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">@dimen/margin_bottom</item>
+        <item name="android:elevation" tools:ignore="NewApi">@dimen/dim_cardview_elevation</item>
         <item name="android:layout_marginTop">@dimen/margin_top</item>
-        <item name="android:layout_gravity">center</item>
         <item name="android:text">@string/btn_start</item>
-        <item name="android:background">@color/colorPrimary</item>
-        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
     </style>
 
     <style name="lets_start_text_view_style">
@@ -70,20 +75,26 @@
     <style name="question_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/dim_cardview_elevation</item>
+        <item name="android:elevation" tools:ignore="NewApi">@dimen/dim_cardview_elevation</item>
         <item name="android:paddingBottom">@dimen/padding_bottom</item>
         <item name="android:paddingTop">@dimen/padding_top</item>
         <item name="android:paddingLeft">@dimen/padding_left</item>
         <item name="android:paddingRight">@dimen/padding_right</item>
-        <item name="android:background">@color/colorPrimaryLight</item>
+        <item name="android:background">@color/colorAccentOpacity</item>
         <item name="android:textAllCaps">false</item>
+        <item name="android:text">@string/q1</item>
         <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="radio_group_style">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:baselineAligned">false</item>
-        <item name="android:layout_margin">@dimen/margin_left</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left_side</item>
+        <item name="android:layout_marginTop">@dimen/margin_bottom</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom</item>
     </style>
 
     <style name="radio_button_style">
@@ -95,8 +106,7 @@
     <style name="check_box_style">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">@dimen/margin_top</item>
-        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left_side</item>
         <item name="android:layout_marginRight">@dimen/margin_right</item>
         <item name="android:textSize">@dimen/text_size</item>
     </style>
@@ -104,15 +114,17 @@
     <style name="submit_button_style">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">@dimen/margin_top</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_2</item>
         <item name="android:layout_marginBottom">@dimen/margin_bottom_2</item>
-        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left_side</item>
         <item name="android:layout_marginRight">@dimen/margin_right</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:gravity">center</item>
-        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:text">@string/btn_result</item>
+        <item name="android:background">@color/colorAccent</item>
         <item name="android:lineSpacingExtra">@dimen/line_spacing</item>
-        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textColor">@color/text_white_banner</item>
     </style>
 
     <style name="result_header_style">
@@ -121,7 +133,7 @@
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:layout_marginTop">@dimen/margin_top</item>
-        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left_side</item>
         <item name="android:layout_marginRight">@dimen/margin_right</item>
         <item name="android:textSize">@dimen/text_size_2</item>
     </style>
@@ -129,11 +141,12 @@
     <style name="result_text_view_style">
         <item name="android:layout_width">@dimen/result_text_view_width</item>
         <item name="android:layout_height">@dimen/result_text_view_height</item>
-        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left_side</item>
         <item name="android:layout_marginRight">@dimen/margin_right</item>
         <item name="android:layout_marginTop">@dimen/margin_top_2</item>
         <item name="android:layout_marginBottom">@dimen/margin_bottom_2</item>
         <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@drawable/shape</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:textSize">@dimen/text_size</item>
     </style>
@@ -142,7 +155,7 @@
         <item name="android:layout_width">@dimen/result_image_width</item>
         <item name="android:layout_height">@dimen/result_image_height</item>
         <item name="android:layout_marginTop">@dimen/margin_top_2</item>
-        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left_side</item>
         <item name="android:layout_marginRight">@dimen/margin_right</item>
         <item name="android:layout_centerInParent">true</item>
     </style>
@@ -152,14 +165,14 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">@dimen/margin_top_2</item>
         <item name="android:layout_marginBottom">@dimen/margin_bottom_2</item>
-        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left_side</item>
         <item name="android:layout_marginRight">@dimen/margin_right</item>
         <item name="android:paddingRight">@dimen/padding_right</item>
         <item name="android:paddingLeft">@dimen/padding_left</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:gravity">center</item>
-        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:background">@color/colorAccent</item>
         <item name="android:lineSpacingExtra">@dimen/line_spacing</item>
-        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
     </style>
 </resources>

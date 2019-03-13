@@ -1,41 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_white_banner"
     android:orientation="vertical"
     tools:context="com.example.android.quizappbikes.MainActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:elevation="@dimen/dim_cardview_elevation"
+        tools:targetApi="lollipop">
+
+        <ImageView
+            android:id="@+id/image_top"
+            style="@style/background_style"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/starting_image" />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/description"
+        style="@style/quiz_description_style" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:gravity="center_horizontal">
 
-        <ImageView
-            android:id="@+id/image_top"
-            style="@style/image_bike_style"
-            android:alpha=".85" />
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_top_2">
-
-            <LinearLayout
-                android:id="@+id/activity_main"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/description"
-                    style="@style/quiz_description_style" />
-
-                <Button
-                    android:id="@+id/start"
-                    style="@style/start_button_style"
-                    android:onClick="startQuiz" />
-            </LinearLayout>
-        </ScrollView>
+        <Button
+            android:id="@+id/start"
+            style="@style/start_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dim_start_button_margin"
+            android:layout_marginBottom="@dimen/dim_start_button_margin"
+            android:onClick="startQuiz" />
     </LinearLayout>
-</ScrollView>
+</LinearLayout>

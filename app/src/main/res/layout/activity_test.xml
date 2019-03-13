@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/text_white_banner"
     android:orientation="vertical"
     tools:context="com.example.android.quizappbikes.TestActivity">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -17,13 +18,8 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/name_field"
-                style="@style/lets_start_text_view_style" />
-
-            <TextView
                 android:id="@+id/question1"
-                style="@style/question_style"
-                android:text="@string/q1" />
+                style="@style/question_style" />
 
             <RadioGroup
                 android:id="@+id/q1Group"
@@ -145,7 +141,6 @@
                     android:text="@string/q5a3" />
             </RadioGroup>
 
-
             <TextView
                 android:id="@+id/question6"
                 style="@style/question_style"
@@ -254,6 +249,7 @@
             <CheckBox
                 android:id="@+id/q10a1"
                 style="@style/check_box_style"
+                android:layout_marginTop="@dimen/margin_bottom"
                 android:text="@string/q10a1" />
 
             <CheckBox
@@ -279,20 +275,13 @@
             <EditText
                 android:id="@+id/name_user"
                 style="@style/edit_text_description_style"
+                android:layout_gravity="center_vertical"
                 tools:text="Andrew" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/btn_result"
-                    style="@style/submit_button_style"
-                    android:onClick="getResult"
-                    android:text="@string/btn_result" />
-            </LinearLayout>
+            <Button
+                android:id="@+id/btn_result"
+                style="@style/submit_button_style"
+                android:onClick="getResult" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

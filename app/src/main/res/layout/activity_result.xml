@@ -3,31 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/text_white_banner"
     tools:context="com.example.android.quizappbikes.ResultActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/relative_layout_margin_bottom"
-        android:paddingTop="@dimen/relative_layout_margin_top">
+        android:paddingTop="@dimen/relative_layout_margin_top"
+        android:paddingBottom="@dimen/relative_layout_margin_bottom">
 
         <TextView
             android:id="@+id/result_header"
             style="@style/result_header_style"
-            tools:text="@string/result_header"/>
+            tools:text="@string/result_header" />
 
         <ImageView
             android:id="@+id/result_image"
             style="@style/result_image_style"
-            android:layout_below="@+id/result_header" />
+            android:layout_below="@+id/result_header"
+            android:contentDescription="@string/result_image" />
 
         <TextView
             android:id="@+id/answer_text_view"
             style="@style/result_text_view_style"
             android:layout_below="@+id/result_image"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/margin_top" />
-
+            android:layout_marginTop="@dimen/margin_top"
+            android:gravity="center" />
         <Button
             android:id="@+id/bt_go_back"
             style="@style/restart_button_style"

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="margin_top">16dp</dimen>
+    <dimen name="padding_quiz_description">8dp</dimen>
+    <dimen name="margin_top">64dp</dimen>
     <dimen name="margin_bottom">16dp</dimen>
     <dimen name="margin_top_2">32dp</dimen>
     <dimen name="margin_bottom_2">32dp</dimen>
-    <dimen name="margin_left">32dp</dimen>
+    <dimen name="margin_left_side">32dp</dimen>
     <dimen name="margin_right">32dp</dimen>
+    <dimen name="margin_quiz_description">24dp</dimen>
+    <dimen name="margin_bottom_quiz_description">48dp</dimen>
     <dimen name="line_spacing">4sp</dimen>
     <dimen name="text_size">16sp</dimen>
     <dimen name="padding_bottom">16dp</dimen>
@@ -15,6 +18,7 @@
     <dimen name="text_size_2">24sp</dimen>
     <dimen name="layout_button_margin_bottom">32dp</dimen>
     <dimen name="layout_button_margin_top">32dp</dimen>
+    <dimen name="width_start_button">120dp</dimen>
     <dimen name="result_text_view_width">500dp</dimen>
     <dimen name="result_text_view_height">100dp</dimen>
     <dimen name="restart_button_width">200dp</dimen>
@@ -23,4 +27,6 @@
     <dimen name="result_image_height">240dp</dimen>
     <dimen name="relative_layout_margin_bottom">32dp</dimen>
     <dimen name="relative_layout_margin_top">32dp</dimen>
+    <dimen name="dim_start_button_margin">0dp</dimen>
+    <dimen name="dim_cardview_elevation">2dp</dimen>
 </resources>
