@@ -4,7 +4,7 @@ This quiz lets you find out what type of bike matches best with your personality
 # Project Description
 Implement an app to through which users can take a short personality quiz and find out what type of bicycles best matches it.
 
-![](Screenshot_1552509704.png)![](Screenshot_1552509709.png)![](Screenshot_1552509916.png)
+![](MainScreen.png)![](QuestionScreen1.png)![](QuestionScreen2.png)![](ResultScreen.png)
 
 # Pre-requisites
 -	Android SDK v22
